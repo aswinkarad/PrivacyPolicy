@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Privacy Policy · FuelMet</title>
+<meta name="description" content="FuelMet privacy policy — no data collection, offline first, no ads, no tracking." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --font-display: 'Space Grotesk', sans-serif;
+    --font-mono: 'Share Tech Mono', monospace;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
+    background:
+      radial-gradient(ellipse 90% 45% at 20% -5%, rgba(79, 216, 201, 0.1), transparent 55%),
+      radial-gradient(ellipse 70% 40% at 100% 20%, rgba(90, 120, 180, 0.08), transparent 50%),
+      #10141a;
+    color: #eef2f5;
+  }
+
+  .toolbar {
+    display: flex;
+    align-items: center;
+    padding: 16px 18px;
+    background: #10141a;
+    border-bottom: 1px solid #1c232c;
+  }
+
+  .toolbar h1 {
+    margin: 0;
+    font-family: var(--font-display);
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  .page {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 4px 18px 56px;
+  }
+
+  .hero {
+    margin: 20px 0 16px;
+  }
+
+  .brand-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+  }
+
+  .brand-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #7aa2ff;
+    box-shadow: 0 0 10px rgba(122, 162, 255, 0.8);
+  }
+
+  .eyebrow {
+    margin: 0;
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #7aa2ff;
+  }
+
+  .hero h1 {
+    margin: 0 0 6px;
+    font-family: var(--font-display);
+    font-size: 1.9rem;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+  }
+
+  .sub {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #8592a0;
+  }
+
+  .badge-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 20px;
+  }
+
+  .pill {
+    padding: 5px 10px;
+    border-radius: 999px;
+    font-family: var(--font-display);
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #4fd8c9;
+    background: rgba(79, 216, 201, 0.1);
+    border: 1px solid rgba(79, 216, 201, 0.2);
+  }
+
+  .summary-card {
+    border-radius: 18px;
+    padding: 16px 16px 14px;
+    margin-bottom: 24px;
+    background: linear-gradient(165deg, #1c232c 0%, #141920 100%);
+    border: 1px solid #2c3540;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.3);
+  }
+
+  .summary-card h2 {
+    margin: 0 0 12px;
+    font-family: var(--font-display);
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #4fd8c9;
+  }
+
+  .summary-card ul {
+    margin: 0;
+    padding: 0 0 0 18px;
+  }
+
+  .summary-card li {
+    margin-bottom: 8px;
+    font-size: 0.88rem;
+    line-height: 1.45;
+    color: #c5ced8;
+  }
+
+  .summary-card strong {
+    color: #eef2f5;
+  }
+
+  .summary-note {
+    margin: 12px 0 0;
+    padding-top: 12px;
+    border-top: 1px dashed #2c3540;
+    font-size: 0.78rem;
+    color: #8592a0;
+    line-height: 1.4;
+  }
+
+  .policy {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .block {
+    display: flex;
+    gap: 12px;
+    padding: 16px;
+    border-radius: 16px;
+    background: #171c22;
+    border: 1px solid #2c3540;
+  }
+
+  .block-num {
+    flex-shrink: 0;
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    color: #5a6573;
+    padding-top: 2px;
+  }
+
+  .block-body h2 {
+    margin: 0 0 8px;
+    font-family: var(--font-display);
+    font-size: 1rem;
+    font-weight: 700;
+    color: #eef2f5;
+  }
+
+  .block-body p {
+    margin: 0 0 10px;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #a8b3c0;
+  }
+
+  .block-body p:last-child {
+    margin-bottom: 0;
+  }
+
+  .block-body strong {
+    color: #eef2f5;
+  }
+
+  .block-body code {
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    color: #4fd8c9;
+    background: rgba(79, 216, 201, 0.1);
+    padding: 1px 6px;
+    border-radius: 6px;
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px 0;
+    padding: 14px;
+    border-radius: 14px;
+    background: rgba(122, 162, 255, 0.08);
+    border: 1px solid rgba(122, 162, 255, 0.2);
+  }
+
+  .contact div {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .contact span {
+    font-size: 0.68rem;
+    font-family: var(--font-display);
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #8592a0;
+  }
+
+  .contact strong {
+    font-family: var(--font-mono);
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #eef2f5;
+  }
+
+  .contact a {
+    color: #7aa2ff;
+    text-decoration: none;
+  }
+
+  .contact a:hover {
+    text-decoration: underline;
+  }
+
+  .contact-hint {
+    margin-top: 10px !important;
+    font-size: 0.78rem !important;
+    color: #8592a0 !important;
+  }
+
+  .footer {
+    margin-top: 28px;
+    text-align: center;
+  }
+
+  .footer p {
+    margin: 4px 0;
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    color: #5a6573;
+    letter-spacing: 0.04em;
+  }
+
+  a:focus-visible,
+  button:focus-visible {
+    outline: 2px solid #4fd8c9;
+    outline-offset: 2px;
+  }
+</style>
+</head>
+<body>
+  <div class="toolbar">
+    <h1>Privacy Policy</h1>
+  </div>
+
+  <div class="page">
+    <header class="hero">
+      <div class="brand-row">
+        <span class="brand-dot"></span>
+        <p class="eyebrow">FuelMet · Legal</p>
+      </div>
+      <h1>Privacy Policy</h1>
+      <p class="sub">Effective / last updated: 15 July 2026</p>
+    </header>
+
+    <div class="badge-row">
+      <span class="pill">No data collection</span>
+      <span class="pill">Offline first</span>
+      <span class="pill">No ads</span>
+      <span class="pill">No tracking</span>
+    </div>
+
+    <section class="summary-card">
+      <h2>Play Store summary</h2>
+      <ul>
+        <li><strong>Data collected:</strong> None</li>
+        <li><strong>Data shared:</strong> None</li>
+        <li><strong>Account / login:</strong> Not required</li>
+        <li><strong>Ads &amp; analytics:</strong> Not used</li>
+        <li><strong>Internet required:</strong> No (calculators work offline)</li>
+      </ul>
+      <p class="summary-note">
+        Use these answers in Google Play Console → App content → Data safety.
+      </p>
+    </section>
+
+    <article class="policy">
+      <section class="block">
+        <div class="block-num">01</div>
+        <div class="block-body">
+          <h2>Introduction</h2>
+          <p>
+            This Privacy Policy describes how <strong>FuelMet</strong>
+            (Android package <code>com.aswinkl71.fuelmet</code>) handles information.
+            FuelMet is a personal utility that calculates vehicle fuel mileage and
+            estimated trip fuel cost. By installing or using the app, you agree to
+            this Privacy Policy.
+          </p>
+        </div>
+      </section>
+
+      <section class="block">
+        <div class="block-num">02</div>
+        <div class="block-body">
+          <h2>Who we are</h2>
+          <p>
+            FuelMet is developed and published as an independent Android application.
+            We do not operate user accounts, a cloud backend, or a marketing mailing list
+            for this app.
+          </p>
+        </div>
+      </section>
+
+      <section class="block">
+        <div class="block-num">03</div>
+        <div class="block-body">
+          <h2>Information we collect</h2>
+          <p>
+            <strong>We do not collect personal information.</strong>
+            FuelMet does not gather your name, email address, phone number, location,
+            contacts, photos, device identifiers for advertising, or payment details.
+          </p>
+          <p>
+            Numbers you type for calculations (for example distance, fuel used,
+            mileage, and fuel price) are processed only on your device to show results
+            on screen. They are not uploaded to our servers because FuelMet has no
+            such servers for user data.
+          </p>
+        </div>
+      </section>
+
+      <section class="block">
+        <div class="block-num">04</div>
+        <div class="block-body">
+          <h2>How information is used</h2>
+          <p>
+            Calculation inputs are used solely to compute mileage (distance ÷ fuel) and
+            trip cost ((distance ÷ mileage) × price per litre). We do not use this
+            information for analytics, advertising, profiling, or resale.
+          </p>
+        </div>
+      </section>
+
+      <section class="block">
+        <div class="block-num">05</div>
+        <div class="block-body">
+          <h2>Data sharing</h2>
+          <p>
+            We do <strong>not</strong> sell, rent, or share user data with third parties,
+            advertisers, data brokers, or social networks. Because we do not collect
+            personal data from the app, there is nothing to share.
+          </p>
+        </div>
+      </section>
+
+      <section class="block">
+        <div class="block-num">06</div>
+        <div class="block-body">
+          <h2>On-device storage</h2>
+          <p>
+            FuelMet may keep simple preferences or temporary values using on-device
+            storage (such as Android / Capacitor Preferences). This data remains on
+            your device. It is not transmitted to us. Clearing app data or uninstalling
+            FuelMet removes such local data.
+          </p>
+        </div>
+      </section>
+
+      <section class="block">
+        <div class="block-num">07</div>
+        <div class="block-body">
+          <h2>Permissions &amp; internet</h2>
+          <p>
+            FuelMet's mileage and cost calculators work fully <strong>offline</strong>.
+            Fonts and UI assets are bundled with the app — we do not load remote font
+            or analytics scripts.
+          </p>
+          <p>
+            The Android package may still declare the standard <code>INTERNET</code>
+            permission (common for WebView / Capacitor apps). FuelMet does not send your
+            calculation inputs to a developer-operated server for processing or storage.
+          </p>
+        </div>
+      </section>
+
+      <section class="block">
+        <div class="block-num">08</div>
+        <div class="block-body">
+          <h2>Third-party services</h2>
+          <p>
+            FuelMet does not integrate advertising SDKs, analytics SDKs, crash-reporting
+            services that upload personal data, or social login providers.
+          </p>
+          <p>
+            The Google Play Store itself may collect installation and usage statistics
+            according to Google's own policies when you download apps from Play. That
+            collection is controlled by Google, not by FuelMet's in-app logic.
+          </p>
+        </div>
+      </section>
+
+      <section class="block">
+        <div class="block-num">09</div>
+        <div class="block-body">
+          <h2>Children's privacy</h2>
+          <p>
+            FuelMet is a general-purpose calculator and does not target children.
+            We do not knowingly collect personal information from anyone, including
+            children under 13 (or the equivalent minimum age in your country).
+          </p>
+        </div>
+      </section>
+
+      <section class="block">
+        <div class="block-num">10</div>
+        <div class="block-body">
+          <h2>Security</h2>
+          <p>
+            Because calculations happen on your device and we do not operate a user-data
+            cloud for FuelMet, risk of remote data breach of your trip numbers through
+            our systems is minimized. You remain responsible for securing your own
+            device with a lock screen and OS updates.
+          </p>
+        </div>
+      </section>
+
+      <section class="block">
+        <div class="block-num">11</div>
+        <div class="block-body">
+          <h2>Your choices</h2>
+          <p>
+            You can stop using FuelMet at any time by closing or uninstalling the app.
+            Uninstalling removes the app and its local data from your device (subject to
+            how Android handles backups on your phone).
+          </p>
+        </div>
+      </section>
+
+      <section class="block">
+        <div class="block-num">12</div>
+        <div class="block-body">
+          <h2>Changes to this policy</h2>
+          <p>
+            We may update this Privacy Policy when the app's features or legal
+            requirements change. The "last updated" date at the top will change when
+            we revise it. Continued use after an update means you accept the revised
+            policy. Material changes will be reflected in the app and in the policy
+            URL submitted to Google Play when applicable.
+          </p>
+        </div>
+      </section>
+
+      <section class="block">
+        <div class="block-num">13</div>
+        <div class="block-body">
+          <h2>Contact</h2>
+          <p>
+            For privacy questions about FuelMet or this policy, contact the developer:
+          </p>
+          <div class="contact">
+            <div><span>App</span><strong>FuelMet</strong></div>
+            <div><span>Package</span><strong>com.aswinkl71.fuelmet</strong></div>
+            <div>
+              <span>Email</span>
+              <strong>
+                <a href="mailto:aswinappukarad1234@gmail.com">aswinappukarad1234@gmail.com</a>
+              </strong>
+            </div>
+          </div>
+          <p class="contact-hint">
+            This page is the public Privacy Policy URL for Google Play Console.
+          </p>
+        </div>
+      </section>
+    </article>
+
+    <footer class="footer">
+      <p>FuelMet v1.0.0</p>
+      <p>Offline · No ads · No tracking · Play Store ready policy</p>
+    </footer>
+  </div>
+</body>
+</html>
